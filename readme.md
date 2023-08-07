@@ -4,6 +4,7 @@ Secure communicator app is a simple app that allows exchange of encrypted messag
 
 ### How to:
 
+- install dependencies: `npm install`
 - start the communicator app: `npm run start:app`
 - start the eavesdropper app: `npm run start:eavesdropper`
 - run the tests: `npm run test`
