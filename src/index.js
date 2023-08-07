@@ -16,13 +16,12 @@ import { generateKeysFor } from "./services/cryptoService.js";
 import { clearInboxFiles, getInboxFile } from "./services/fileService.js";
 
 // Setup
+console.clear();
 await introMessage();
 let senderName = await chooseSenderName();
 let receiverName = await chooseReceiverName(senderName);
 let senderInbox = getInboxFile(senderName);
 generateKeysFor(senderName);
-
-console.clear();
 clearInboxFiles(senderName, receiverName);
 
 while (true) {
